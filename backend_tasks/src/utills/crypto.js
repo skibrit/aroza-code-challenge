@@ -13,7 +13,7 @@ const signToken = async (payload, secret, duration) => {
   });
 };
 
-const verifyToken = async (token, secret) => {
+const verifyToken = (token, secret) => {
   return jwt.verify(token, secret);
 };
 
