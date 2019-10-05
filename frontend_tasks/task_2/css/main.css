@@ -1,0 +1,146 @@
+body {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*===========================================================
+    MASTHEAD CSS 
+=============================================================*/
+.masthead {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('/assets/bg.jpg');
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.inner-masthead {
+  padding: 15px;
+}
+
+/*===========================================================
+    NAVBAR CSS 
+=============================================================*/
+.nav-wrapper {
+  position: relative;
+  padding: 8% 0;
+}
+
+.nav-wrapper .navbar {
+  padding: 0;
+}
+
+.navbar .navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand {
+  color: #fffaf4;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #ff554e;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgb(255, 85, 78);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,85,78, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #dddcdb;
+  padding: 0px 25px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ff554e;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #ff554f;
+}
+
+/*===========================================================
+    HEADING CSS 
+=============================================================*/
+.heading-1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 3.5rem;
+  opacity: 0.9;
+  padding: 0;
+}
+
+.heading-2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  margin-top: 4%;
+  opacity: 0.7;
+  padding: 0;
+}
+
+.heading-2 span {
+  text-transform: uppercase;
+}
+
+/*===========================================================
+    CONTACT FORM
+=============================================================*/
+.contact-form-wrapper {
+  margin-top: 6%;
+}
+
+.form-group {
+  padding: 0;
+}
+
+.form-group .form-control {
+  width: 100%;
+  height: 45px;
+}
+
+.submit-btn {
+  margin-left: 10px;
+  background-color: #ff544e;
+  height: 45px;
+  position: relative;
+  top: 1px;
+}
+
+/*===========================================================
+    RESPONSIVE MEDIA QUERY CSS
+=============================================================*/
+@media only screen and (max-width: 990px) {
+  .heading-1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .heading-2 {
+    margin-top: 6%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .contact-form-wrapper {
+    margin-top: 12%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .submit-btn {
+    margin-left: 0px;
+  }
+}

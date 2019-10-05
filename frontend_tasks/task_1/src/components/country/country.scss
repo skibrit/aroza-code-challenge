@@ -1,0 +1,49 @@
+@import "../../assets/styles/vars.scss";
+
+.country-list {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  .rt-th,
+  .rt-td {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.country-section {
+  .country-detail-wrapper {
+    margin: 10px 0px;
+    .inner-wrapper {
+      .single-row {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        .content-column {
+          font-size: 18px;
+        }
+        .label-column {
+          width: 150px;
+          flex-shrink: 0;
+          flex-grow: 0;
+          font-weight: bold;
+        }
+        .value-column {
+          flex-grow: 1;
+          $imSize: 2rem;
+          img {
+            width: $imSize !important;
+            height: $imSize !important;
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    margin-top: 25px;
+  }
+}
