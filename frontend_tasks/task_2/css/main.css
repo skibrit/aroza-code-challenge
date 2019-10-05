@@ -3,12 +3,39 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #121111;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1100;
+}
+.loader .inner-loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-loader img {
+  width: 150px;
+  height: 150px;
+}
+
 /*===========================================================
     MASTHEAD CSS 
 =============================================================*/
 .masthead {
+  background-color: #232121;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('/assets/bg.jpg');
+    url('../assets/bg.jpg');
   min-height: 100vh;
   background-size: cover;
 }

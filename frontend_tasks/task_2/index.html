@@ -12,55 +12,72 @@
 </head>
 
 <body>
-    <div class="masthead">
-        <section class="container inner-masthead">
-            <div class="nav-wrapper">
-                <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#">Start simple</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+    <div class="wrapper">
+        <div class="loader">
+            <div class="inner-loader">
+                <div class="spinner-grow" role="status">
+                    <img src="assets/loading.gif" alt="Loading" />
+                </div>
             </div>
+        </div>
+        <div class="masthead">
+            <section class="container inner-masthead">
+                <div class="nav-wrapper">
+                    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#">Start simple</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
 
-            <h2 class="heading-1 col-md-6 col-sm-8 col-xs-9">Start up landing page for your product & services</h2>
-            <h4 class="heading-2 col-md-7 col-sm-8 col-xs-9">Perfect landing page to showcase your product or service.
-                Built with bootstrap 4</h4>
+                <h2 class="heading-1 col-md-6 col-sm-8 col-xs-9">Start up landing page for your product & services</h2>
+                <h4 class="heading-2 col-md-7 col-sm-8 col-xs-9">Perfect landing page to showcase your product or
+                    service.
+                    Built with bootstrap 4</h4>
 
-            <div class="contact-form-wrapper">
-                <h4 class="heading-2 "><span>Try for free</span>. just leave your email below
-                    and we will get in touch
-                </h4>
-                <form class="form-inline">
-                    <div class="form-group col-md-4 col-sm-6">
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="* Your email address">
-                    </div>
-                    <button type="button" class="btn btn-danger col-md-3 col-sm-5 submit-btn">Request free
-                        trial</button>
+                <div class="contact-form-wrapper">
+                    <h4 class="heading-2 "><span>Try for free</span>. just leave your email below
+                        and we will get in touch
+                    </h4>
+                    <form class="form-inline">
+                        <div class="form-group col-md-4 col-sm-6">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="* Your email address">
+                        </div>
+                        <button type="button" class="btn btn-danger col-md-3 col-sm-5 submit-btn">Request free
+                            trial</button>
 
-                </form>
-            </div>
+                    </form>
+                </div>
 
-        </section>
+            </section>
+        </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                $(".loader").hide();
+            }, 1000)
+        }
+    </script>
 </body>
 
 </html>
