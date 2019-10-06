@@ -1,4 +1,4 @@
-# aroza-app
+# aroza-code-challenge
 
 ## frontend tasks
 
